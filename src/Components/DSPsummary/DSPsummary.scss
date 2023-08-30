@@ -1,0 +1,144 @@
+.containerDSP_summary {
+    height: auto;
+    background: linear-gradient(0deg, #3D2C56 0%, #3D2C56 100%), linear-gradient(135deg, #EE0979 0%, #FF6A00 100%);
+    padding: 20px 150px;
+
+    @media (max-width:600px) {
+        padding: 20px 50px;
+
+    }
+
+    .DSP_heading h1 {
+        color: #FFF;
+        text-align: center;
+        font-family: Lorin;
+        font-size: 64px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 64px;
+        /* 100% */
+
+        @media (max-width:1000px) {
+            font-size: 45px;
+        }
+
+        @media (max-width:600px) {
+            font-size: 20px;
+            line-height: 20px;
+
+        }
+    }
+
+    .DSP_para {
+        color: #FFF;
+        text-align: center;
+        font-family: Lorin;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        /* 120% */
+
+        @media (max-width:1000px) {
+            font-size: 17px;
+        }
+
+        @media (max-width:600px) {
+            font-size: 12px;
+        }
+    }
+
+    .DSP_Accordian {
+        // margin-top: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 50px 0px;
+        flex-grow: 1;
+        flex-shrink: 0;
+        width: 100%;
+        gap: 20px;
+
+
+        .DSP_icon img {
+            height: 27px;
+            width: 110px;
+
+            @media (max-width:1000px) {
+                height: 22px;
+                width: 70px;
+            }
+
+            @media (max-width:900px) {
+                display: none;
+            }
+        }
+
+        .DSP_Tagline {
+            color: #FFF;
+            width: 440px;
+            font-family: sans-serif;
+            font-size: 17px;
+            font-style: normal;
+            line-height: 24px;
+
+            /* 120% */
+
+            @media (max-width:1000px) {
+                font-size: 15px;
+            }
+
+            @media (max-width:600px) {
+                font-size: 12px;
+            }
+
+        }
+
+        .DSP_DownIcon {
+            font-size: 30px;
+            cursor: pointer;
+            margin-top: -20px;
+
+            @media (max-width:1000px) {
+                font-size: 25px;
+            }
+
+            @media (max-width:600px) {
+                font-size: 13px;
+            }
+        }
+    }
+}
+
+.DSP_afterText {
+    padding-inline: 30px;
+    padding-bottom: 20px;
+    color: white;
+    text-align: justify;
+    font-size: 17px;
+
+
+    @media (max-width:1000px) {
+        font-size: 15px;
+    }
+
+    @media (max-width:600px) {
+        font-size: 12px;
+    }
+
+
+}
+
+
+.DSP_Contianer {
+    border-bottom: 1px solid white;
+
+    &:last-child {
+        border-bottom: none;
+    }
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

@@ -1,0 +1,147 @@
+.section_FAQ {
+    height: 100vh;
+
+    @media (max-width:800px) {
+        height: auto;
+    }
+
+    .FAQ_heading {
+        margin-top: 100px;
+        color: #3D2C56;
+        text-align: center;
+        font-family: Lorin;
+        font-size: 64px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 64px;
+        /* 100% */
+
+        @media (max-width:800px) {
+            font-size: 45px;
+            font-weight: 600;
+        }
+
+        @media (max-width:600px) {
+            margin-top: 20px;
+            font-size: 25px;
+            font-weight: 600;
+        }
+    }
+
+    .FAQ_tagline {
+        color: #7E7E7E;
+        text-align: center;
+        font-family: Lorin;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+
+        /* 120% */
+        @media (max-width:800px) {
+            font-size: 15px;
+            width: 70%;
+            text-align: center;
+            margin-left: 10%;
+        }
+    }
+
+    .FAQ_function {
+        margin-top: 70px;
+        display: flex;
+        justify-content: space-evenly;
+
+        @media (max-width:1150px) {
+            flex-direction: column;
+            align-items: center;
+        }
+
+
+
+        .FAQ_img {
+            width: 25%;
+            height: 300px;
+            background-image: url("../..//assets/images/FAQ.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+            border-radius: 16px;
+
+            @media (max-width:1140px) {
+                display: none;
+            }
+
+
+
+
+            .img_Upper_icon {
+                position: absolute;
+                height: 80px;
+                width: 80px;
+                box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                background-color: #ffff;
+                border-radius: 20px;
+                margin-top: 50px;
+                margin-left: 270px;
+
+                @media (max-width:1150px) {
+                    display: none;
+                }
+            }
+        }
+
+        .img_Upper_icon img {
+            height: 40px;
+            width: 40px;
+            margin: 20px 20px;
+            border-radius: 8px;
+        }
+
+        .FAQ_Accordian {
+            // width: 40%;
+            // padding: 5px 20px 0px 0px;
+            padding: 17px 0px;
+            border-bottom: 1px solid rgb(202, 202, 202);
+
+            &:last-child {
+                border-bottom: none;
+            }
+
+            @media (max-width:600px) {
+                font-size: 10px;
+            }
+
+            .AfterText {
+                width: 400px;
+                padding-bottom: 10px;
+
+                @media (max-width:600px) {
+                    margin-top: 15px;
+                    width: 250px;
+                }
+
+            }
+
+        }
+
+        .icon_pad {
+            padding-left: 100px;
+            cursor: pointer;
+
+            @media (max-width:600px) {
+                padding-left: 10px;
+                height: 12px;
+            }
+        }
+
+        .icon_pad {
+            font-size: 25px;
+
+            @media (max-width:600px) {
+                font-size: 12px;
+            }
+        }
+
+    }
+}

@@ -1,0 +1,144 @@
+.navbar {
+    width: 100%;
+    height: 88px;
+    background: #FFF;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo img {
+    width: 193px;
+    height: 40px;
+}
+
+.nav_Links {
+    color: #000;
+    text-align: center;
+    font-family: Lorin;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    display: flex;
+    gap: 40px;
+    text-decoration: none;
+
+}
+
+.nav_Links a {
+    text-decoration: none;
+    color: #000;
+
+    :focus {
+        color: #EE0979;
+    }
+
+}
+
+.letsStart {
+    display: flex;
+    gap: 20px;
+}
+
+.svg {
+    margin-top: 10px;
+}
+
+.btn_letsStart button {
+    padding: 8px 32px;
+    border: none;
+    border-radius: 24px;
+    background: #EE0979;
+    color: #FFF;
+    font-family: Lorin;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 24px;
+    cursor: pointer;
+    /* 150% */
+}
+
+
+.hamBurgr_menu {
+    display: none;
+    cursor: pointer;
+
+    @media (max-width:1050px) {
+        display: block;
+        font-size: 35px;
+    }
+}
+
+@media (max-width:1050px) {
+    .nav_Links {
+        display: none;
+    }
+
+    .letsStart {
+        display: none;
+    }
+
+    .navbar {
+        justify-content: space-between;
+        padding: 0px 20px;
+    }
+
+}
+
+.MobileNavbar {
+    display: flex;
+    flex-direction: column;
+    // padding-left: 20px;
+
+
+    /* 100% Full-height */
+    height: 100%;
+    width: 0;
+    /* 0 width - change this with JavaScript */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Stay on top */
+    top: 0;
+    /* Stay at the top */
+    left: 0;
+    background-color: #ffff;
+    /* Black*/
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    padding-top: 60px;
+    /* Place content 60px from the top */
+    transition: 0.5s;
+    /* 0.5 second transition effect to slide in the sidenav */
+}
+
+.MobileNavbar a {
+
+    // padding: 8px 8px 8px 32px;
+    padding: 10px 10px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #EE0979;
+
+    background-color: transparent;
+    // display: block;
+    transition: 0.3s;
+
+
+
+
+}
+
+.closebtn {
+    position: absolute;
+    top: 25px;
+    right: 50px;
+    font-size: 30px;
+    margin-left: 50px;
+    cursor: pointer;
+    color: #EE0979;
+
+
+}

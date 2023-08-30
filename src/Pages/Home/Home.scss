@@ -1,0 +1,129 @@
+body {
+    overflow-x: hidden;
+}
+
+.container_Hero {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(90deg, #3D2C56 32.06%, rgba(61, 44, 86, 0.00) 100%), url("../../assets/images/heroImg.avif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+    @media (max-width:550px) {
+        height: 80vh;
+    }
+
+}
+
+.TagLine_section {
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 140px;
+
+    @media (max-width:550px) {
+        margin-left: 0px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+}
+
+.Tagline {
+    color: #FFF;
+    font-family: Lorin;
+    font-size: 90px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 90px;
+    /* 88.235% */
+    /* margin-bottom: -30px; */
+
+    @media (max-width:800px) {
+        font-size: 60px;
+    }
+
+    @media (max-width:550px) {
+        font-size: 25px;
+    }
+}
+
+.digital {
+    margin-left: 180px;
+
+    @media (max-width:800px) {
+        margin-left: 0px;
+    }
+}
+
+.Distribution {
+    color: #EE0979;
+}
+
+.btn_Join button {
+    margin-top: 30px;
+    border-radius: 40px;
+    background: #FFF;
+    color: #EE0979;
+    padding: 24px 48px;
+
+    @media (max-width:550px) {
+        padding: 14px 90px;
+        margin-top: 20px;
+
+    }
+
+
+}
+
+.slider_section {
+    background: linear-gradient(135deg, #EE0979 0%, #FF6A00 100%);
+    padding: 0px;
+
+    .slider_item {
+        width: 100%;
+        height: 176px;
+        border-right: 3px solid #FFF;
+        border-bottom: 3px solid #FFF;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0px;
+    }
+
+    .bottom-slider {
+        padding: 0px;
+        margin: 0px;
+
+        .slider_item {
+            border-bottom: 0px;
+            height: 110px;
+        }
+    }
+}
+
+
+.sectionMap {
+    margin-top: 150px;
+    height: 100vh;
+    background-image: url("../../assets/images/map.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media (max-width:850px) {
+
+        margin-top: 250px;
+        background-size: contain;
+    }
+
+    @media (max-width:400px) {
+        margin-top: 150px;
+        height: 50vh;
+    }
+}
