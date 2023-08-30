@@ -1,3 +1,3 @@
 # VerseOne
-This is a React.js Base website
-only design 
+its a React.js website
+ 
